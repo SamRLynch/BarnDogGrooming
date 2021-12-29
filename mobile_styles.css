@@ -1,0 +1,488 @@
+@media only screen and (max-width: 700px) {
+  /* --------------------------------------------------------------------- */
+  /* ----------------------------- MOBILE -------------------------------- */
+  /* --------------------------------------------------------------------- */
+  @font-face {
+    font-family: PoppinsSemibold;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: PoppinsMedium;
+    src: url(../fonts/Poppins-Medium.ttf);
+  }
+  @font-face {
+    font-family: OpenSansLight;
+    src: url(../fonts/OpenSans-Light.ttf);
+  }
+  @font-face {
+    font-family: OpenSansMedium;
+    src: url(../fonts/OpenSans-Medium.ttf);
+  }
+  @font-face {
+    font-family: OpenSansRegular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+  }
+  @font-face {
+    font-family: OpenSansSemiBold;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+  }
+  /* 4484CE  */
+  /* ----------------------------------------- */
+  /* ------------ START CSS RESET  ----------- */
+  /* ----------------------------------------- */
+  /* line 59, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  /* line 149, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav {
+    display: block;
+  }
+  /* line 162, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  body {
+    line-height: 1;
+  }
+  /* line 166, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  blockquote,
+  q {
+    quotes: none;
+  }
+  /* line 171, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+  /* line 179, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  /* line 184, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  /* ----------------------------------------- */
+  /* ------------- END CSS RESET  ------------ */
+  /* ----------------------------------------- */
+  /* line 193, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  body {
+    background-color: #E6F2FF;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+  }
+  /* line 200, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  body * {
+    box-sizing: border-box;
+  }
+  /* ----------------------------------------- */
+  /* ----------------- MIXINS  --------------- */
+  /* ----------------------------------------- */
+  /* ----------------------------------------- */
+  /* -------------- TEXT STYLES  ------------- */
+  /* ----------------------------------------- */
+  /* line 264, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  h1 {
+    font-family: "PoppinsSemibold", sans-serif;
+    font-size: 38pt;
+    display: block;
+    color: #E6F2FF;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  /* line 268, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  h2 {
+    font-family: "PoppinsSemibold", sans-serif;
+    font-size: 38pt;
+    display: block;
+    color: #E6F2FF;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 24pt;
+  }
+  /* line 273, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  h3 {
+    font-family: "PoppinsSemibold", sans-serif;
+    font-size: 38pt;
+    display: block;
+    color: #E6F2FF;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 20pt;
+    font-family: 'PoppinsMedium', sans-serif;
+  }
+  /* line 279, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  p {
+    font-size: 14pt;
+    line-height: 18pt;
+    font-family: "OpenSansLight", sans-serif;
+    display: block;
+    color: #FFF;
+    font-weight: 100;
+    margin-bottom: 10pt;
+  }
+  /* line 283, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  h4 {
+    font-family: "PoppinsSemibold", sans-serif;
+    font-size: 38pt;
+    display: block;
+    color: #E6F2FF;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 18pt;
+  }
+  /* line 289, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  p strong {
+    font-family: 'OpenSansSemiBold', sans-serif;
+  }
+  /* line 293, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  li {
+    font-size: 14pt;
+    line-height: 18pt;
+    font-family: "OpenSansLight", sans-serif;
+    display: block;
+    color: #FFF;
+    font-weight: 100;
+    margin-bottom: 10pt;
+    margin-bottom: 0;
+  }
+  /* line 298, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .leadin {
+    font-size: 20pt;
+    font-family: 'PoppinsMedium', sans-serif;
+  }
+  /* ----------------------------------------- */
+  /* --------------- MAIN GRID  -------------- */
+  /* ----------------------------------------- */
+  /* line 309, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  div.main_grid {
+    display: grid;
+    grid-gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    grid-template-columns: 10% auto auto auto auto auto auto 10%;
+    grid-template-rows: 40px auto auto auto auto auto;
+    grid-template-areas: "header header header header" "a a a a" "b b b b" "c c c c" "d d d d" "e e e e" "footer footer footer footer";
+  }
+  /* line 328, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .main_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: 1 / 3 / 1 / span 4;
+    grid-gap: 0;
+    position: relative;
+  }
+  /* line 337, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .main_content .blob {
+    grid-area: 1 / 1 / 4 / span 4;
+    width: 100vw;
+    margin-top: 0;
+    z-index: -10;
+  }
+  /* line 343, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .main_content .blob img {
+    width: 100%;
+  }
+  /* line 348, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .main_content .blob_back {
+    grid-area: 1 / 1 / 4 / span 4;
+    width: 100vw;
+    margin-top: 0;
+    z-index: -20;
+  }
+  /* line 354, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .main_content .blob_back img {
+    width: 100%;
+  }
+  /* line 360, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .main_content.homepage {
+    grid-area: a;
+  }
+  /* line 364, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .main_content.services {
+    grid-area: b;
+  }
+  /* line 368, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .main_content.about {
+    grid-area: c;
+  }
+  /* line 372, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .main_content.testimonials {
+    grid-area: d;
+  }
+  /* line 376, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .main_content.contact {
+    grid-area: e;
+  }
+  /* ----------------------------------------- */
+  /* ---------------- Navigation  ------------ */
+  /* ----------------------------------------- */
+  /* line 386, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .top_nav_container {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  /* line 393, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  ul.navigation {
+    list-style: none;
+    justify-items: center;
+    text-transform: uppercase;
+    background: #3478C5;
+    box-shadow: 0px 2px 10px rgba(3, 47, 97, 0.5);
+  }
+  /* line 400, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  ul.navigation li {
+    display: none;
+  }
+  /* line 405, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .logo {
+    margin: 0;
+  }
+  /* line 408, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .logo img {
+    height: 150px;
+  }
+  /* line 413, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav {
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    background-color: #3478C5;
+    text-align: center;
+  }
+  /* line 424, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav a,
+  .mobilenav i {
+    text-align: left;
+    padding: 10px;
+    color: #E6F2FF;
+    text-decoration: none;
+  }
+  /* line 432, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav .icons {
+    width: 100%;
+    text-align: left;
+    padding-top: 1em;
+    margin-left: 15px;
+  }
+  /* line 438, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav .icons a,
+  .mobilenav .icons i {
+    border-top: none;
+    padding: 10px 5px;
+    font-size: 20pt;
+  }
+  /* line 447, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav li {
+    display: none;
+  }
+  /* line 451, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav ul :last-child {
+    display: block;
+  }
+  /* line 455, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav.responsive {
+    padding-top: 60pt;
+  }
+  /* line 459, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav.responsive li {
+    display: block;
+  }
+  /* line 462, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav.responsive li:nth-child(n+1):nth-child(-n+6) {
+    margin-top: 0.5em;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /* line 469, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav.responsive li:nth-child(n+1):nth-child(-n+6) a {
+    display: block;
+    border-radius: 5px;
+    background-color: #599BE8;
+    font-size: 18pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* line 478, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav.responsive li:nth-child(n+1):nth-child(-n+6) i {
+    float: left;
+    font-size: 18pt;
+    display: block;
+    line-height: 3pt;
+    margin-right: 1em;
+  }
+  /* line 487, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav.responsive li.mobile_nav_grid {
+    padding-bottom: 33%;
+  }
+  /* line 490, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav.responsive li.mobile_nav_grid ul li.nav_address {
+    text-align: left;
+    float: left;
+    width: 40%;
+    margin-left: 6%;
+  }
+  /* line 496, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav.responsive li.mobile_nav_grid ul li.nav_address strong {
+    font-family: 'OpenSansSemiBold';
+    font-weight: bold;
+  }
+  /* line 501, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav.responsive li.mobile_nav_grid ul li.nav_address ul li {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+  }
+  /* line 507, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav.responsive li.mobile_nav_grid ul li.nav_map {
+    float: right;
+    display: block;
+    width: 48%;
+    margin-left: 0;
+    margin-right: 0 !important;
+  }
+  /* line 520, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav.nav_close li {
+    display: none;
+  }
+  /* line 524, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav li.mobilemenu {
+    display: block;
+    width: 100%;
+    background-color: #3478C5;
+    box-shadow: 0px 2px 10px rgba(3, 47, 97, 0.5);
+    position: fixed;
+    z-index: 100;
+    top: 0pt;
+  }
+  /* line 534, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav li.mobilemenu i,
+  .mobilenav li.mobilemenu a {
+    font-size: 20pt;
+  }
+  /* line 539, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav li.mobilemenu a.mobile_dropdown {
+    float: right;
+    padding-top: 18pt;
+  }
+  /* line 544, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav li.mobilemenu a.barndog_logo {
+    float: left;
+    padding-left: 0;
+    padding-top: 20pt;
+    margin-left: 20px;
+  }
+  /* line 550, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .mobilenav li.mobilemenu a.barndog_logo img {
+    width: 100px;
+  }
+}
+
+/*# sourceMappingURL=mobile_styles.css.map */
