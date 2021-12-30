@@ -1,0 +1,327 @@
+@font-face {
+  font-family: PoppinsSemibold;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: OpenSansLight;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: OpenSansMedium;
+  src: url(../fonts/OpenSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: OpenSansRegular;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSansSemiBold;
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+/* 4484CE  */
+/* ----------------------------------------- */
+/* ------------ START CSS RESET  ----------- */
+/* ----------------------------------------- */
+/* line 54, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 144, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav {
+  display: block;
+}
+
+/* line 157, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+body {
+  line-height: 1;
+}
+
+/* line 161, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 166, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 174, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 179, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* ----------------------------------------- */
+/* ------------- END CSS RESET  ------------ */
+/* ----------------------------------------- */
+/* line 188, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+body {
+  background-color: #E6F2FF;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+}
+
+/* line 195, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+body * {
+  box-sizing: border-box;
+}
+
+/* line 207, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+body {
+  margin: 0;
+  padding: 0;
+  /* make it look decent enough */
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+/* line 218, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+#menuToggle {
+  display: block;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* line 231, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+/* line 239, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+#menuToggle a:hover {
+  color: tomato;
+}
+
+/* line 245, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+/* line 265, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+/* line 285, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+/* line 290, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+/* line 299, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+/* line 309, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+/* line 318, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+/* line 327, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+/* line 346, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+/* line 355, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile.scss */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+/*# sourceMappingURL=mobile.css.map */

@@ -1,0 +1,487 @@
+@font-face {
+    font-family: PoppinsSemibold;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+
+@font-face {
+    font-family: OpenSansLight;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: OpenSansMedium;
+    src: url(../fonts/OpenSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: OpenSansRegular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSansSemiBold;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+@media only screen and (max-width: 620px) {
+
+
+$header_font: 'PoppinsSemibold',
+sans-serif;
+$body_font: 'OpenSansLight',
+sans-serif;
+
+$background_color: red;
+$text_color: #E6F2FF;
+$accent_color: #3478C5;
+/* 4484CE  */
+$nav_color: #032F61;
+$star_yellow: #efba42;
+$button_blue: #599BE8;
+$light_blue: #C1DDFE;
+$cell_blue: #3477C6;
+$white: #FFF;
+
+/* ----------------------------------------- */
+/* ------------ START CSS RESET  ----------- */
+/* ----------------------------------------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* ----------------------------------------- */
+/* ------------- END CSS RESET  ------------ */
+/* ----------------------------------------- */
+
+body {
+    background-color: $background_color;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+/* ----------------------------------------- */
+/* ----------------- MIXINS  --------------- */
+/* ----------------------------------------- */
+
+@mixin body_font_mixin {
+    @include p_size;
+    font-family: $body_font;
+    display: block;
+    color: $white;
+    font-weight: 100;
+    margin-bottom: 10pt;
+}
+
+@mixin head_font_mixin {
+    font-family: $header_font;
+    @include header_size;
+    display: block;
+    color: $text_color;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+@mixin header_size {
+    font-size: 38pt;
+
+    @media only screen and (min-width: 1020px) {
+        font-size: 48pt;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 72pt;
+    }
+}
+
+@mixin h1_size {
+    font-size: 24pt;
+
+    @media only screen and (min-width: 880px) {
+        font-size: 36pt;
+    }
+
+    @media only screen and (min-width: 1020px) {
+        font-size: 42pt;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 48pt;
+    }
+}
+
+@mixin p_size {
+    font-size: 14pt;
+    line-height: 18pt;
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 16pt;
+        line-height: 18pt;
+    }
+}
+
+@mixin h2_size {
+    font-size: 24pt;
+
+    @media only screen and (min-width: 1020px) {
+        font-size: 26pt;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 28pt;
+    }
+}
+
+@mixin h3_size {
+    font-size: 20pt;
+
+    @media only screen and (min-width: 1020px) {
+        font-size: 22pt;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 24pt;
+    }
+}
+
+/* ----------------------------------------- */
+/* -------------- TEXT STYLES  ------------- */
+/* ----------------------------------------- */
+h1 {
+    @include head_font_mixin;
+}
+
+h2 {
+    @include head_font_mixin;
+    @include h2_size;
+}
+
+h3 {
+    @include head_font_mixin;
+    @include h3_size;
+    font-family: 'PoppinsMedium', sans-serif;
+}
+
+p {
+    @include body_font_mixin;
+}
+
+h4 {
+    @include head_font_mixin;
+    font-size: 18pt;
+
+}
+
+p strong {
+    font-family: 'OpenSansSemiBold', sans-serif;
+}
+
+li {
+    @include body_font_mixin;
+    margin-bottom: 0;
+}
+
+.leadin {
+    @include h3_size;
+    font-family: 'PoppinsMedium', sans-serif;
+}
+
+/* ----------------------------------------- */
+/* --------------- MAIN GRID  -------------- */
+/* ----------------------------------------- */
+div.main_grid {
+    display: grid;
+    grid-gap: 20px;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    grid-template-columns: 10% auto auto auto auto auto auto 10%;
+    grid-template-rows: 40px auto auto auto auto auto;
+    grid-template-areas:
+        "header header header header header header header header"
+        ". a a a a . "
+        ". b b b b ."
+        ". c c c c ."
+        ". d d d d ."
+        ". e e e e ."
+        ". footer footer footer footer .";
+}
+
+.main_content {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-area: 1 / 3 / 1 / span 6;
+
+    grid-gap: 0;
+    position: relative;
+
+
+    @media only screen and (min-width: 500px) {
+        .blob {
+            grid-area: 1 / 1 / 4 / span 8;
+            width: 100%;
+            margin-top: 0;
+            z-index: -10;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .blob_back {
+            grid-area: 1 / 1 / 4 / span 8;
+            width: 100%;
+            margin-top: 0;
+            z-index: -20;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 880px) {
+        .blob {
+            grid-area: 1 / 2 / 4 / span 7;
+            width: 100%;
+            margin-top: 0;
+            z-index: -10;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .blob_back {
+            grid-area: 1 / 1 / 4 / span 7;
+            width: 100%;
+            margin-top: 0;
+            z-index: -20;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &:nth-of-type(2n) {
+            .blob_back {
+                grid-area: 1 / 2 / 4 / span 7;
+            }
+
+            .blob {
+                grid-area: 1 / 1 / 4 / span 7;
+            }
+        }
+
+        &:nth-of-type(2) {
+            .blob {
+                grid-area: 1 / 1 / 4 / span 8;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .blob {
+            grid-area: 1 / 2 / 4 / span 7;
+            width: 100%;
+            margin-top: 0;
+            z-index: -10;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .blob_back {
+            grid-area: 1 / 1 / 4 / span 7;
+            width: 100%;
+            margin-top: 0;
+            z-index: -20;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &:nth-of-type(2n) {
+            .blob_back {
+                grid-area: 1 / 2 / 4 / span 7;
+            }
+
+            .blob {
+                grid-area: 1 / 1 / 4 / span 7;
+            }
+        }
+
+        &:nth-of-type(2) {
+            .blob {
+                grid-area: 1 / 1 / 4 / span 8;
+            }
+        }
+
+    }
+
+    &.homepage {
+        grid-area: a;
+    }
+
+    &.services {
+        grid-area: b;
+    }
+
+    &.about {
+        grid-area: c;
+    }
+
+    &.testimonials {
+        grid-area: d;
+    }
+
+    &.contact {
+        grid-area: e;
+    }
+}
+
+
+
+
+}
