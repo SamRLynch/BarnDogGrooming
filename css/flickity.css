@@ -83,7 +83,7 @@ https://flickity.metafizzy.co
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
-    top: 15vw;
+    top: 11vw;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -96,7 +96,7 @@ https://flickity.metafizzy.co
 }
 
 .flickity-prev-next-button.next {
-    left: -5.5vw;
+    right: -5.5vw;
 }
 
 /* right to left */

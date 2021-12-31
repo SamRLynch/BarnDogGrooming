@@ -199,6 +199,10 @@
         }
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     /* ----------------------------------------- */
     /* ----------------- MIXINS  --------------- */
     /* ----------------------------------------- */
@@ -251,7 +255,7 @@
 
     @mixin p_size {
         font-size: 14pt;
-        line-height: 18pt;
+        line-height: 16pt;
 
         @media only screen and (min-width: 1200px) {
             font-size: 16pt;
@@ -338,6 +342,31 @@
         font-family: 'PoppinsMedium', sans-serif;
     }
 
+    a.mobile_anchor {
+        display: block;
+        position: relative;
+        visibility: hidden;
+
+        &.hours {
+            top: -120px;
+        }
+
+        &.services {
+            top: -60px;
+        }
+
+        &.about {
+            top: -40px;
+        }
+
+        &.testimonials {}
+
+        &.contact {
+            top: 100px;
+        }
+
+    }
+
     /* ----------------------------------------- */
     /* --------------- MAIN GRID  -------------- */
     /* ----------------------------------------- */
@@ -349,7 +378,9 @@
         grid-gap: 0;
 
 
-        @media only screen and (min-width: 500px) {
+
+
+        @media only screen and (min-width: 701px) {
             .blob {
                 grid-area: 1 / 1 / 4 / span 8;
                 width: 100%;
@@ -363,30 +394,6 @@
 
             .blob_back {
                 grid-area: 1 / 1 / 4 / span 8;
-                width: 100%;
-                margin-top: 0;
-                z-index: -20;
-
-                img {
-                    width: 100%;
-                }
-            }
-        }
-
-        @media only screen and (min-width: 880px) {
-            .blob {
-                grid-area: 1 / 2 / 4 / span 7;
-                width: 100%;
-                margin-top: 0;
-                z-index: -10;
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            .blob_back {
-                grid-area: 1 / 1 / 4 / span 7;
                 width: 100%;
                 margin-top: 0;
                 z-index: -20;
@@ -566,7 +573,7 @@
     }
 
     /* ----------------------------------------- */
-    /* ---------------- BUTTONS  --------------- */
+    /* ---------------- BUTTONS ---------------- */
     /* ----------------------------------------- */
 
     a.button_01 {
@@ -576,7 +583,7 @@
         text-decoration: none;
         color: $text_color;
         background-color: $button_blue;
-        border: 2pt solid $accent_color;
+        border: 2pt solid $text_color;
         text-align: center;
         transition: all 0.2s;
         border-radius: 5px;
@@ -622,9 +629,7 @@
     /* ----------------------------------------- */
     .homepage {
         .home_copy {
-
             grid-area: 2 / 2 / 2 / span 4;
-
 
             @media only screen and (min-width: 700px) {
                 grid-area: 2 / 2 / 2 / span 4;
@@ -663,16 +668,15 @@
             grid-area: 1 / 1 / 1 / span 2;
             margin-bottom: 3em;
             margin-top: 3em;
-            ;
+
+            p.tagline {
+                margin-bottom: 20pt;
+            }
         }
 
         .visit_us {
             margin-top: 2em;
-
-            @media only screen and (min-width: 900px) {
-                grid-area: 2 / 2 / 2 / 2;
-            }
-
+            grid-area: 2 / 2 / 2 / 2;
             position: relative;
             border: 2px solid $accent_color;
             background-color: $text_color;
@@ -684,6 +688,18 @@
                 @include body_font_mixin;
                 margin-bottom: 5pt;
                 color: $nav_color;
+
+                &.phone_num {
+                    color: $accent_color;
+                    font-family: PoppinsMedium, sans-serif;
+                    font-size: 16pt;
+
+                    @media only screen and (min-width: 1100px) {
+                        font-size: 18pt;
+                    }
+
+                    margin-top: 1.2em;
+                }
             }
 
             &:before {
@@ -734,7 +750,7 @@
                         color: $accent_color;
                         font-weight: bold;
                         margin-top: 0.5em;
-                        margin-bottom: 1em;
+                        margin-bottom: 0.5em;
                     }
                 }
 
@@ -743,7 +759,6 @@
         }
 
         .map {
-            margin-top: 1em;
             grid-area: 3 / 1 / 3 / span 2;
         }
 
@@ -772,7 +787,11 @@
             grid-template-columns: 48% auto;
             grid-template-rows: auto auto auto;
             grid-gap: 20px;
-            margin-top: -10vw;
+            margin-top: 0vw;
+
+            @media only screen and (min-width: 1100px) {
+                margin-top: -10vw;
+            }
 
             h2 {
                 grid-area: 1 / 1 / 1 / span 2;
@@ -832,88 +851,91 @@
     /* ------------------ ABOUT ---------------- */
     /* ----------------------------------------- */
     .about {
-
-
         .about_us {
             display: grid;
-            grid-template-columns: 17% 17% 17% 17% 17% 17% 17%;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-area: 1 / 2 / 1 / span 7;
-            grid-template-rows: 50px auto auto 16vw 16vw;
-            margin-top: -3vw;
-
-            @media only screen and (min-width: 830px) {
-
-                grid-template-rows: 100px auto auto 16vw 16vw;
-                grid-area: 1 / 3 / 1 / span 6;
-
-            }
-
+            grid-template-rows: 50px 4vw 1fr 13vw 13vw 9vw;
+            margin-top: 0;
             grid-gap: 20px;
 
             h2 {
-                grid-area: 2 / 1 / 2 / span 3
+                grid-area: 2 / 1 / 2 / span 3;
             }
 
             p {
-                grid-area: 3 / 1 / 3 / span 3;
+                grid-area: 3 / 1 / 3 / span 4;
             }
 
-            div.button {
-                grid-area: 4 / 3;
+            @media only screen and (min-width: 850px) {
+                p {
+                    grid-area: 3 / 1 / 3 / span 3;
+                }
             }
+
+            @media only screen and (min-width: 1100px) {
+                h2 {
+                    grid-area: 2 / 2 / 2 / span 2;
+                }
+
+                p {
+                    grid-area: 3 / 2 / 3 / span 2;
+                }
+            }
+
 
             div {
                 max-width: 100%;
-                overflow: hidden;
-                border-radius: 5px;
 
                 img {
                     max-width: 100%;
                     height: 100%;
+                    border-radius: 5px;
                     box-shadow: 0px 0px 12px rgba(3, 47, 97, 0.3);
                 }
 
-                @media only screen and (min-width: 600px) {
-                    &:nth-of-type(2) {
-                        grid-area: 4 / 1 / 4 / 1;
+                &:nth-of-type(2) {
+                    grid-area: 4 / 1 / 4 / span 2;
 
-                        img {
-                            object-fit: cover;
-                        }
-
+                    @media only screen and (min-width: 1400px) {
+                        grid-area: 4 / 2 / 4 / 2;
                     }
 
-                    &:nth-of-type(3) {
-                        grid-area: 4 / 3 / 4 / 3;
-
-                        img {
-                            object-fit: cover;
-                        }
-
+                    img {
+                        object-fit: cover;
                     }
 
-                    &:nth-of-type(4) {
-                        grid-area: 3 / 4 / span 2 / span 2;
-
-                        img {
-                            object-fit: cover;
-                        }
-                    }
                 }
 
-                @media only screen and (min-width: 1400px) {
-                    &:nth-of-type(2) {
-                        grid-area: 4 / 1 / 4 / span 2;
+                /* two dogs image*/
+                &:nth-of-type(3) {
+                    grid-area: 5 / 2 / 5 / span 2;
+
+                    @media only screen and (min-width: 1400px) {
+                        grid-area: 4 / 3 / 4 / 3;
                     }
 
-                    &:nth-of-type(3) {
-                        grid-area: 5 / 2 / 5 / span 2;
+                    img {
+                        object-fit: cover;
                     }
 
-                    &:nth-of-type(4) {
+                }
+
+                /* tall image*/
+                &:nth-of-type(4) {
+                    grid-area: 4 / 4 / span 2 / span 2;
+
+                    @media only screen and (min-width: 850px) {
                         grid-area: 3 / 4 / span 3 / span 2;
                     }
+
+                    img {
+                        object-fit: cover;
+                    }
                 }
+
+
+
             }
         }
 
@@ -924,9 +946,13 @@
     /* -------------- TESTIMONIALS ------------- */
     /* ----------------------------------------- */
     .testimonials {
-        margin-top: -10vw;
+        margin-top: 0;
         background-color: $accent_color;
-        grid-template-rows: 1vw 34vw 7vw 1fr;
+        grid-template-rows: 1vw 42vw 10vw 1fr;
+
+        @media only screen and (min-width: 1000px) {
+            grid-template-rows: 1vw 34vw 7vw 1fr;
+        }
 
         h2 {
             grid-area: 1 / 3 / 1 / span 4;
@@ -942,6 +968,8 @@
 
         .flickity-viewport {
             height: 305px !important;
+            border-right: 3px solid $button_blue;
+            border-left: 3px solid $button_blue;
         }
 
 
@@ -951,17 +979,39 @@
             grid-area: 2 / 2 / 2 / span 6;
         }
 
+
         .gallery-cell {
-            width: 35vw;
+            width: 45vw;
             height: 260px;
             padding: 1em 1em 0 1em;
+            margin-right: 25pt;
+            filter: drop-shadow(-4px -4px 6px rgba(77, 168, 218, 0.3)) drop-shadow(4px 4px 9px rgba(2, 45, 95, 0.3));
+        }
+
+
+        @media only screen and (min-width: 1000px) {
+            .gallery {
+                margin-top: 1em;
+                grid-area: 2 / 2 / 2 / span 6;
+            }
+
+            .gallery-cell {
+                width: 35vw;
+                height: 260px;
+                padding: 1em 1em 0 1em;
+                margin-right: 25pt;
+                filter: drop-shadow(-4px -4px 6px rgba(77, 168, 218, 0.3)) drop-shadow(4px 4px 9px rgba(2, 45, 95, 0.3));
+            }
+
+        }
+
+        .gallery-cell {
             background-color: $accent_color;
             border-radius: 10px;
             margin-top: 1.2em;
             text-align: center;
             position: relative;
-            margin-right: 25pt;
-            filter: drop-shadow(-4px -4px 6px rgba(77, 168, 218, 0.24)) drop-shadow(4px 4px 9px rgba(2, 45, 95, 0.15));
+
 
             .review {
                 display: flex;
@@ -971,6 +1021,33 @@
                 p {
                     font-size: 14pt;
                     line-height: 16pt;
+
+
+                    &:before {
+                        background: url('../images/quote-left.svg') no-repeat;
+                        background-size: 50px 50px;
+                        height: 50px;
+                        width: 50px;
+                        content: ' ';
+                        position: fixed;
+                        top: 45px;
+                        left: 15px;
+                        z-index: -10;
+                    }
+
+                    &:after {
+                        background: url('../images/quote-right.svg') no-repeat;
+                        background-size: 50px 50px;
+                        height: 50px;
+                        width: 50px;
+                        content: ' ';
+                        position: fixed;
+                        margin-top: 0;
+                        right: 15px;
+                        z-index: -10;
+                    }
+
+
                 }
 
                 i {
@@ -1010,7 +1087,7 @@
             background-color: $background_color;
             display: grid;
             grid-template-columns: repeat(8, 1fr);
-            grid-template-rows: auto auto auto auto auto;
+            grid-template-rows: 1fr 1fr auto auto auto;
             grid-gap: 0;
             padding-top: 2em;
             padding-bottom: 2em;
@@ -1019,19 +1096,32 @@
                 grid-area: 1 / 3 / 1 / span 6;
                 color: $nav_color;
             }
+
+            p {
+                grid-area: 2 / 3 / 2 / span 6;
+                color: $nav_color;
+            }
         }
 
         .pet_gallery {
             margin-top: 1em;
-            grid-area: 2 / 2 / 2 / span 6;
+            grid-area: 3 / 2 / 3 / span 6;
             display: grid;
-            grid-gap: 22px;
             border-radius: 5px;
             grid-template-areas:
                 "img1 img1 img3 img5 img5 img8"
                 "img1 img1 img4 img6 img9 img9"
                 "img2 img2 img4 img7 img9 img9";
             grid-template-rows: 10vw 10vw 10vw;
+            grid-gap: 10px;
+
+            @media only screen and (min-width: 800px) {
+                grid-gap: 12px;
+            }
+
+            @media only screen and (min-width: 1250px) {
+                grid-gap: 22px;
+            }
 
             div {
                 max-width: 100%;
@@ -1039,7 +1129,7 @@
 
                 img {
                     border-radius: 5px;
-                    overflow: hidden;
+                    box-shadow: 0px 0px 12px rgba(3, 47, 97, 0.3);
                     max-width: 100%;
                 }
 
@@ -1113,22 +1203,32 @@
     /* ---------------- CONTACT ---------------- */
     /* ----------------------------------------- */
     .contact {
-
         grid-column-gap: 20px;
         grid-row-gap: 0;
         background-color: $accent_color;
         padding-bottom: 15vw;
 
         .email_form {
-            grid-area: 2 / 2 / 2 / span 3;
+            grid-area: 2 / 3 / 2 / span 2;
+            margin-top: 3em;
+        }
+
+        .contact_address {
+            grid-area: 2 / 5 / 2 / span 2;
+            margin-top: 7em;
+            margin-left: 3em;
+
+            li strong {
+                color: $nav_color;
+                font-family: 'OpenSansSemiBold', sans-serif;
+            }
         }
 
         div.button.primary {
-            grid-area: 2 / 5 / 2 / span 3;
-            align-self: end;
+            grid-area: 3 / 3 / 3 / span 2;
+            margin-top: 3em;
 
-            a.button_01 {
-            }
+            a.button_01 {}
         }
     }
 
@@ -1327,7 +1427,7 @@
         p {
             font-size: 10pt;
             text-align: center;
-            grid-area: 2 / 2 / 2 / span 4;
+            grid-area: 2 / 3 / 2 / span 4;
 
             a {
                 color: $text_color;
