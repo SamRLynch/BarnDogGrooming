@@ -439,14 +439,15 @@
                     width: 100%;
                     margin-left: 6%;
 
-                    strong {
-                        font-family: 'OpenSansSemiBold', sans-serif;
-                        font-weight: bold;
-                    }
-
                     ul li {
                         margin-top: 0 !important;
                         margin-left: 0 !important;
+
+                        h4 {
+                            text-align: left;
+                            margin-top: 10pt;
+                            color: $nav_color;
+                        }
                     }
                 }
 

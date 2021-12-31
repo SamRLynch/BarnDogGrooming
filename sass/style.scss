@@ -347,22 +347,24 @@
         position: relative;
         visibility: hidden;
 
-        &.hours {
-            top: -120px;
+        &.homepage {
+            top: -30vw;
         }
 
         &.services {
-            top: -60px;
+            top: 0vw;
         }
 
         &.about {
-            top: -40px;
+            top: -7vw;
         }
 
-        &.testimonials {}
+        &.testimonials {
+            top: -15vw;
+        }
 
         &.contact {
-            top: 100px;
+            top: 5vw;
         }
 
     }
@@ -631,11 +633,7 @@
         .home_copy {
             grid-area: 2 / 2 / 2 / span 4;
 
-            @media only screen and (min-width: 700px) {
-                grid-area: 2 / 2 / 2 / span 4;
-            }
-
-            @media only screen and (min-width: 880px) {
+            @media only screen and (min-width: 1150px) {
                 grid-area: 2 / 3 / 2 / span 3;
             }
 
@@ -688,18 +686,17 @@
                 @include body_font_mixin;
                 margin-bottom: 5pt;
                 color: $nav_color;
+            }
 
-                &.phone_num {
-                    color: $accent_color;
-                    font-family: PoppinsMedium, sans-serif;
-                    font-size: 16pt;
+            h4 {
+                color: $accent_color;
+                font-size: 15pt;
 
-                    @media only screen and (min-width: 1100px) {
-                        font-size: 18pt;
-                    }
-
-                    margin-top: 1.2em;
+                @media only screen and (min-width: 1100px) {
+                    font-size: 18pt;
                 }
+
+                margin-top: 1.2em;
             }
 
             &:before {
@@ -712,11 +709,6 @@
 
         .hours {
             grid-area: 2 / 1 / 2 / 1;
-
-            @media only screen and (min-width: 900px) {
-                grid-area: 2 / 1 / 2 / 1;
-            }
-
             border-radius: 5px;
             padding: 15pt;
             border: 2px solid $accent_color;
@@ -1090,7 +1082,6 @@
             grid-template-rows: 1fr 1fr auto auto auto;
             grid-gap: 0;
             padding-top: 2em;
-            padding-bottom: 2em;
 
             h3 {
                 grid-area: 1 / 3 / 1 / span 6;
@@ -1203,33 +1194,50 @@
     /* ---------------- CONTACT ---------------- */
     /* ----------------------------------------- */
     .contact {
+        margin-top: -8vw;
         grid-column-gap: 20px;
         grid-row-gap: 0;
         background-color: $accent_color;
         padding-bottom: 15vw;
 
         .email_form {
-            grid-area: 2 / 3 / 2 / span 2;
+            grid-area: 2 / 2 / 2 / span 3;
             margin-top: 3em;
         }
 
         .contact_address {
-            grid-area: 2 / 5 / 2 / span 2;
+            grid-area: 2 / 5 / 2 / span 3;
             margin-top: 7em;
-            margin-left: 3em;
 
-            li strong {
+
+            h4 {
+                text-align: left;
+                margin-top: 10pt;
                 color: $nav_color;
-                font-family: 'OpenSansSemiBold', sans-serif;
             }
         }
 
         div.button.primary {
-            grid-area: 3 / 3 / 3 / span 2;
             margin-top: 3em;
-
+            grid-area: 3 / 3 / 3 / span 4;
+            text-align: center;
             a.button_01 {}
         }
+
+        @media only screen and (min-width: 1150px) {
+            .email_form {
+                grid-area: 2 / 3 / 2 / span 2;
+            }
+
+            .contact_address {
+                grid-area: 2 / 5 / 2 / span 2;
+            }
+
+ 
+        }
+
+
+
     }
 
 
