@@ -54,7 +54,7 @@
                 </li>
             </ul>
             <ul class="mobilenav" id="myMobilenav">
-                <li><a href="#services" id="home_m" onclick="nav_close()"><i class="fas fa-clock"></i>HOURS & LOCATION</a></li>
+                <li><a href="#hours" id="home_m" onclick="nav_close()"><i class="fas fa-clock"></i>HOURS & LOCATION</a></li>
                 <li><a href="#services" id="services_m" onclick="nav_close()"><i class="fas fa-shower"></i>SERVICES</a></li>
                 <li><a href="#about" id="about_m" onclick="nav_close()"><i class="fas fa-paw"></i>ABOUT US</a></li>
                 <li><a href="#testimonials" id="testimonials_m" onclick="nav_close()"><i class="fas fa-comment-alt"></i>TESTIMONIALS</a></li>
@@ -83,12 +83,13 @@
                     </ul>
                 </li>
                 <li class="mobilemenu">
-                    <a href="#home" class="barndog_logo"><img src="../images/Logo_2C-01.svg" /></a>
+                    <a href="#homepage" class="barndog_logo" onclick="nav_close()"><img src="../images/Logo_2C-01.svg" /></a>
                     <a href="javascript:void(0);" style="font-size:15px;" class="mobile_dropdown" id="menu_m" onclick="myFunction()"><i class="fas fa-bars"></i></a>
                 </li>
             </ul>
         </nav>
-        <div class="main_content homepage" id="homepage">
+        <a class="mobile_anchor homepage" id="homepage"></a>
+        <div class="main_content homepage">
             <div class="home_copy">
                 <div class="welcome_text">
                     <p class="leadin">Welcome to</p>
@@ -96,6 +97,8 @@
                     <p>A safe and stress free environment for your beloved pet.</p>
                     <p>Call us to make an appointment! <strong>603.205.4757</strong></p>
                 </div>
+                <div class="button primary"> <a href="#services" class="button_01 schedule_btn">View Services <i class="fas fa-caret-down"></i></a></div>
+                <a class="mobile_anchor hours" id="hours"></a>
                 <div class="hours">
                     <ul>
                         <li>Monday - Friday</li>
@@ -110,6 +113,7 @@
                     <p>#4 Fire Lane 16</p>
                     <p>Barnstead, NH 03218</p>
                 </div>
+                <div class="button secondary"><a href="#services" class="button_02 schedule_btn"><i class="fas fa-phone-alt"></i>Call for an Appointment</a></div>
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1034.6145594992847!2d-71.29192232475609!3d43.333621640014265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e27b7f628876c7%3A0xd27029c218c227b6!2s4+Fire+Lane+16%2C+Barnstead%2C+NH+03218!5e0!3m2!1sen!2sus!4v1515083294572" frameborder="1" style="box-shadow: 0px 0px 12px rgba(3, 47, 97, 0.3); border-radius: 5px; margin: 0 auto; width: 100%; height: 200px;" allowfullscreen></iframe>
                 </div>
@@ -121,7 +125,8 @@
                 <img src="../images/blob_A.svg" />
             </div>
         </div>
-        <div class="main_content services" id="services">
+        <a class="mobile_anchor services" id="services"></a>
+        <div class="main_content services">
             <div class="grooming_services">
                 <h2>FULL SERVICE GROOMING</h2>
                 <ul>
@@ -130,7 +135,7 @@
                     <li>Body Trimming</li>
                     <li>Brushing</li>
                     <li>Breed Clips</li>
-                    <li>Eye/Ear/Paw <br/>Cleaning</li>
+                    <li>Eye/Ear/Paw <br />Cleaning</li>
                 </ul>
                 <div class="special">
                     <h3>Special Acommodations</h3>
@@ -147,7 +152,8 @@
                 <img src="../images/blob_B.svg" />
             </div>
         </div>
-        <div class="main_content about" id="about">
+        <a class="mobile_anchor about" id="about"></a>
+        <div class="main_content about">
             <div class="about_us">
                 <h2>ABOUT US</h2>
                 <p>Sylvia founded Barndog Grooming in 2017 after developing a stellar reputation in the grooming business. Prior to this, she attended grooming school while working in facilities around the Southern Maine and New Hampshire area. Her love of animals and study of dog behavior enables her to take compassionate care of your pets. We strive for every pet to fully enjoy their spa day. A place where pets can clean up and unwind.</p>
@@ -163,7 +169,8 @@
                 <img src="../images/blob_C.svg" />
             </div>
         </div>
-        <div class="main_content testimonials" id="testimonials">
+        <a class="mobile_anchor testimonials" id="testimonials"></a>
+        <div class="main_content testimonials">
             <h2>WHAT OUR CUSTOMERS SAY</h2>
             <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                 <div class="gallery-cell">
@@ -519,7 +526,9 @@
                     </div>
                 </div>
             </div>
+            <div class="button secondary"><a href="https://www.google.com/maps/place/Barn+Dog+Grooming/@43.3336588,-71.2935249,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x696e8645b2d566b5!8m2!3d43.3336!4d-71.291405?hl=en" target="_blank" class="button_02 schedule_btn"><i class="fab fa-google"></i>More Reviews</a></div>
             <div class="testimonials_pets">
+                <h3>Happy Customers</h3>
                 <div class="pet_gallery">
                     <div><img src="../images/pet_gallery_01.jpeg" /></div>
                     <div><img src="../images/pet_gallery_02.jpeg" /></div>
@@ -533,7 +542,8 @@
                 </div>
             </div>
         </div>
-        <div class="main_content contact" id="contact">
+        <a class="mobile_anchor contact" id="contact"></a>
+        <div class="main_content contact">
             <div class="email_form">
                 <h2>CONTACT US</h2>
                 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mpzkeden" method="POST">
@@ -556,6 +566,9 @@
                 </form>
                 <div class="button"> <a href="#homepage" class="button_01 schedule_btn"><i class="fas fa-chevron-up"></i>BACK TO TOP</a></div>
             </div>
+        </div>
+        <div class="main_content footer" id="footer">
+            <p><i class="far fa-copyright"></i> 2022 Barn Dog Grooming | Design by <a href="#">Sam L</a></p>
         </div>
     </div>
 </body>

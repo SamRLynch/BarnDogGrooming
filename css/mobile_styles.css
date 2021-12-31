@@ -1,4 +1,8 @@
 @media only screen and (max-width: 700px) {
+  /* line 2, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  html {
+    scroll-behavior: smooth;
+  }
   /* --------------------------------------------------------------------- */
   /* ----------------------------- MOBILE -------------------------------- */
   /* --------------------------------------------------------------------- */
@@ -34,7 +38,7 @@
   /* ----------------------------------------- */
   /* ------------ START CSS RESET  ----------- */
   /* ----------------------------------------- */
-  /* line 64, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 57, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   html,
   body,
   div,
@@ -124,7 +128,7 @@
     vertical-align: baseline;
   }
   /* HTML5 display-role reset for older browsers */
-  /* line 154, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 147, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   article,
   aside,
   details,
@@ -137,16 +141,16 @@
   nav {
     display: block;
   }
-  /* line 167, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 160, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   body {
     line-height: 1;
   }
-  /* line 171, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 164, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   blockquote,
   q {
     quotes: none;
   }
-  /* line 176, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 169, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   blockquote:before,
   blockquote:after,
   q:before,
@@ -154,12 +158,12 @@
     content: '';
     content: none;
   }
-  /* line 184, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 177, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   table {
     border-collapse: collapse;
     border-spacing: 0;
   }
-  /* line 189, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 182, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   * {
     padding: 0;
     margin: 0;
@@ -167,7 +171,7 @@
   /* ----------------------------------------- */
   /* ------------- END CSS RESET  ------------ */
   /* ----------------------------------------- */
-  /* line 198, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 191, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   body {
     background-color: #E6F2FF;
     margin: 0;
@@ -175,7 +179,7 @@
     font-family: "Source Sans Pro", sans-serif;
     font-size: 20px;
   }
-  /* line 205, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 198, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   body * {
     box-sizing: border-box;
   }
@@ -185,7 +189,7 @@
   /* ----------------------------------------- */
   /* -------------- TEXT STYLES  ------------- */
   /* ----------------------------------------- */
-  /* line 261, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 260, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   h1 {
     font-family: "PoppinsSemibold", sans-serif;
     font-size: 38pt;
@@ -193,8 +197,9 @@
     color: #E6F2FF;
     font-weight: bold;
     margin-bottom: 0.5em;
+    text-align: center;
   }
-  /* line 265, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 264, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   h2 {
     font-family: "PoppinsSemibold", sans-serif;
     font-size: 38pt;
@@ -202,9 +207,10 @@
     color: #E6F2FF;
     font-weight: bold;
     margin-bottom: 0.5em;
+    text-align: center;
     font-size: 24pt;
   }
-  /* line 270, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 269, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   h3 {
     font-family: "PoppinsSemibold", sans-serif;
     font-size: 38pt;
@@ -212,20 +218,32 @@
     color: #E6F2FF;
     font-weight: bold;
     margin-bottom: 0.5em;
+    text-align: center;
     font-size: 20pt;
     font-family: 'PoppinsRegular', sans-serif;
   }
-  /* line 276, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 275, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .leadin {
+    font-family: "PoppinsSemibold", sans-serif;
+    font-size: 38pt;
+    display: block;
+    color: #E6F2FF;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 20pt;
+  }
+  /* line 280, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   p {
     font-size: 14pt;
     line-height: 18pt;
-    font-family: "OpenSansLight", sans-serif;
+    font-family: "OpenSansRegular", sans-serif;
     display: block;
     color: #FFF;
     font-weight: 100;
     margin-bottom: 10pt;
   }
-  /* line 280, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 284, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   h4 {
     font-family: "PoppinsSemibold", sans-serif;
     font-size: 38pt;
@@ -233,39 +251,57 @@
     color: #E6F2FF;
     font-weight: bold;
     margin-bottom: 0.5em;
+    text-align: center;
     font-size: 18pt;
   }
-  /* line 286, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 290, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   p strong {
     font-family: 'OpenSansSemiBold', sans-serif;
   }
-  /* line 290, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 294, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   li {
     font-size: 14pt;
     line-height: 18pt;
-    font-family: "OpenSansLight", sans-serif;
+    font-family: "OpenSansRegular", sans-serif;
     display: block;
     color: #FFF;
     font-weight: 100;
     margin-bottom: 10pt;
     margin-bottom: 0;
   }
-  /* line 295, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
-  .leadin {
-    font-size: 20pt;
-    font-family: 'PoppinsMedium', sans-serif;
+  /* line 300, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  a.mobile_anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+  }
+  /* line 305, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  a.mobile_anchor.hours {
+    top: -120px;
+  }
+  /* line 309, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  a.mobile_anchor.services {
+    top: -60px;
+  }
+  /* line 313, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  a.mobile_anchor.about {
+    top: -40px;
+  }
+  /* line 319, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  a.mobile_anchor.contact {
+    top: 100px;
   }
   /* ----------------------------------------- */
   /* ---------------- Navigation  ------------ */
   /* ----------------------------------------- */
-  /* line 309, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 331, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .top_nav_container {
     grid-area: header;
     position: sticky;
     top: 0;
     z-index: 50;
   }
-  /* line 316, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 338, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   ul.navigation {
     list-style: none;
     justify-items: center;
@@ -273,19 +309,19 @@
     background: #3478C5;
     box-shadow: 0px 2px 10px rgba(3, 47, 97, 0.5);
   }
-  /* line 323, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 345, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   ul.navigation li {
     display: none;
   }
-  /* line 328, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 350, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .logo {
     margin: 0;
   }
-  /* line 331, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 353, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .logo img {
     height: 150px;
   }
-  /* line 336, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 358, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav {
     flex-direction: column;
     display: flex;
@@ -296,7 +332,7 @@
     background-color: #3478C5;
     text-align: center;
   }
-  /* line 347, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 369, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav a,
   .mobilenav i {
     text-align: left;
@@ -304,44 +340,44 @@
     color: #E6F2FF;
     text-decoration: none;
   }
-  /* line 355, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 377, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav .icons {
     width: 100%;
     text-align: left;
     padding-top: 1em;
     margin-left: 15px;
   }
-  /* line 361, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 383, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav .icons a,
   .mobilenav .icons i {
     border-top: none;
     padding: 10px 5px;
     font-size: 20pt;
   }
-  /* line 370, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 391, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav li {
     display: none;
   }
-  /* line 374, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 395, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav ul :last-child {
     display: block;
   }
-  /* line 378, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 399, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav.responsive {
     padding-top: 75pt;
   }
-  /* line 382, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 403, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav.responsive li {
     display: block;
   }
-  /* line 385, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 406, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav.responsive li:nth-child(n+1):nth-child(-n+6) {
     margin-top: 0.5em;
     width: auto;
     margin-left: 20px;
     margin-right: 20px;
   }
-  /* line 392, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 413, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav.responsive li:nth-child(n+1):nth-child(-n+6) a {
     display: block;
     border-radius: 5px;
@@ -350,7 +386,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  /* line 401, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 422, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav.responsive li:nth-child(n+1):nth-child(-n+6) i {
     float: left;
     font-size: 18pt;
@@ -358,28 +394,28 @@
     line-height: 3pt;
     margin-right: 1em;
   }
-  /* line 410, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 431, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav.responsive li.mobile_nav_grid {
-    padding-bottom: 33%;
+    padding-bottom: 50%;
   }
-  /* line 413, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 434, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav.responsive li.mobile_nav_grid ul li.nav_address {
     text-align: left;
     float: left;
     width: 40%;
     margin-left: 6%;
   }
-  /* line 419, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 440, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav.responsive li.mobile_nav_grid ul li.nav_address strong {
     font-family: 'OpenSansSemiBold';
     font-weight: bold;
   }
-  /* line 424, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 445, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav.responsive li.mobile_nav_grid ul li.nav_address ul li {
     margin-top: 0 !important;
     margin-left: 0 !important;
   }
-  /* line 430, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 451, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav.responsive li.mobile_nav_grid ul li.nav_map {
     float: right;
     display: block;
@@ -387,11 +423,11 @@
     margin-left: 0;
     margin-right: 0 !important;
   }
-  /* line 443, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 461, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav.nav_close li {
     display: none;
   }
-  /* line 447, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 465, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav li.mobilemenu {
     display: block;
     width: 100%;
@@ -401,112 +437,122 @@
     z-index: 100;
     top: 0pt;
   }
-  /* line 457, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 475, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav li.mobilemenu i,
   .mobilenav li.mobilemenu a {
     font-size: 20pt;
   }
-  /* line 462, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 480, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav li.mobilemenu a.mobile_dropdown {
     float: right;
     padding-top: 18pt;
   }
-  /* line 467, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 485, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav li.mobilemenu a.barndog_logo {
     float: left;
     padding-left: 0;
     padding-top: 20pt;
     margin-left: 20px;
   }
-  /* line 473, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 491, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .mobilenav li.mobilemenu a.barndog_logo img {
     width: 100px;
   }
   /* ----------------------------------------- */
   /* --------------- MAIN GRID  -------------- */
   /* ----------------------------------------- */
-  /* line 486, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 504, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .main_content {
-    width: fit-content;
     display: grid;
     grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
   }
-  /* line 496, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 513, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .main_content .blob img,
   .main_content .blob_back img {
     display: none;
   }
   /* ----------------------------------------- */
-  /* ---------------- BUTTONS  --------------- */
+  /* ---------------- BUTTONS--------------- */
   /* ----------------------------------------- */
-  /* line 508, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 525, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   a.button_01 {
     display: inline-block;
     padding: 0.5em 1em;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'NotoSansMed', sans-serif;
     color: #E6F2FF;
     background-color: #599BE8;
+    border: 2pt solid #3478C5;
     text-align: center;
     transition: all 0.2s;
-    border-radius: 30px;
+    border-radius: 5px;
+    font-size: 18pt;
   }
-  /* line 520, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 538, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   a.button_01 i {
     margin-right: 0.5em;
     font-size: 1.2em;
   }
-  /* line 526, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
-  a.button_01:hover {
-    color: #3478C5;
-    background-color: #E6F2FF;
-  }
-  /* line 532, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
-  #toggle {
-    position: absolute;
-    appearance: none;
-    cursor: pointer;
-    left: -100%;
-    top: -100%;
-  }
-  /* line 540, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
-  #toggle + label {
+  /* line 545, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  a.button_02 {
     display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid #E6F2FF;
+    padding: 0.5em 1em;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'NotoSans', sans-serif;
-    font-weight: 300;
-    color: #E6F2FF;
-    background-color: #599BE8;
+    color: #032F61;
+    background-color: #E6F2FF;
+    border: 2pt solid #032F61;
     text-align: center;
     transition: all 0.2s;
-    border-radius: 5px;
+    border-radius: 30px;
+    font-size: 14pt;
   }
-  /* line 555, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
-  #toggle + label:hover {
-    color: #3478C5;
-    background-color: #E6F2FF;
+  /* line 558, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  a.button_02 i {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    font-size: 16pt;
+    line-height: 16pt;
   }
   /* ----------------------------------------- */
   /* ---------------- HOMEPAGE  -------------- */
   /* ----------------------------------------- */
-  /* line 565, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 572, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .home_copy {
     grid-area: 2 / 2 / 2 / span 4;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 30vw 30vw 30vw 54vw 26vw 30vw 10vw;
+    grid-template-rows: 30vw 30vw 30vw 60vw 26vw 30vw 10vw;
     margin-top: 6em;
+    text-align: center;
   }
-  /* line 574, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 582, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .welcome_text {
     grid-area: 1 / 1 / 1 / span 2;
     margin-bottom: 3em;
   }
-  /* line 579, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 586, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .homepage .welcome_text h1 {
+    margin-bottom: 10pt;
+  }
+  /* line 591, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .homepage div.button.primary {
+    grid-area: 4 / 1 / 4 / span 2;
+    align-self: end;
+    margin-bottom: 2em;
+  }
+  /* line 598, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .homepage div.button.primary a.button_01 i {
+    margin-left: 0.5em;
+    margin-right: 0;
+  }
+  /* line 605, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .homepage div.button.secondary {
+    grid-area: 8 / 1 / 8/ span 2;
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+  }
+  /* line 611, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .visit_us {
     grid-area: 5 / 2 / 7 / 2;
     border-radius: 5px;
@@ -514,11 +560,11 @@
     border: 2px solid #3478C5;
     margin-left: 5px;
   }
-  /* line 586, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 618, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .visit_us p {
     font-size: 14pt;
     line-height: 18pt;
-    font-family: "OpenSansLight", sans-serif;
+    font-family: "OpenSansRegular", sans-serif;
     display: block;
     color: #FFF;
     font-weight: 100;
@@ -529,7 +575,7 @@
     margin-right: -10pt;
     margin-bottom: 0;
   }
-  /* line 595, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 627, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .visit_us:before {
     content: "VISIT US";
     font-family: "PoppinsSemibold", sans-serif;
@@ -538,13 +584,14 @@
     color: #E6F2FF;
     font-weight: bold;
     margin-bottom: 0.5em;
+    text-align: center;
     font-size: 20pt;
     color: #032F61;
     background-color: #E6F2FF;
     text-align: center;
     margin-top: -25pt;
   }
-  /* line 605, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 637, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .visit_us p:nth-of-type(4):after {
     content: "603.205.4757";
     font-size: 16pt;
@@ -556,7 +603,7 @@
     display: block;
     margin-right: -15pt;
   }
-  /* line 618, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 650, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .hours {
     grid-area: 5 / 1 / 7 / 1;
     border-radius: 5px;
@@ -564,7 +611,7 @@
     border: 2px solid #3478C5;
     margin-right: 5px;
   }
-  /* line 626, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 658, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .hours:before {
     content: "HOURS";
     font-family: "PoppinsSemibold", sans-serif;
@@ -573,18 +620,19 @@
     color: #E6F2FF;
     font-weight: bold;
     margin-bottom: 0.5em;
+    text-align: center;
     font-size: 20pt;
     color: #032F61;
     background-color: #E6F2FF;
     text-align: center;
     margin-top: -25pt;
   }
-  /* line 638, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 670, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .hours ul li {
     color: #032F61;
     text-align: center;
   }
-  /* line 642, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 674, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .hours ul li:nth-of-type(odd) {
     font-family: "PoppinsSemibold", sans-serif;
     font-size: 16pt;
@@ -592,7 +640,7 @@
     display: block;
     font-weight: bold;
   }
-  /* line 650, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 682, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .hours ul li:nth-of-type(2) {
     font-family: PoppinsMedium, sans-serif;
     font-size: 24pt;
@@ -602,11 +650,11 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
-  /* line 665, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 697, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .map {
     display: none;
   }
-  /* line 670, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 702, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .blob {
     grid-area: 1 / 1 / 4 / span 6;
     margin-top: 4em;
@@ -614,26 +662,27 @@
     width: 100%;
     z-index: -10;
   }
-  /* line 677, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 709, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .homepage .blob img {
     display: none;
   }
   /* ----------------------------------------- */
   /* ---------------- SERVICES  -------------- */
   /* ----------------------------------------- */
-  /* line 692, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 725, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .services .grooming_services {
+    margin-top: 14vw;
     grid-area: 2 / 2 / 2 / span 4;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20vw 40vw 30vw 54vw 26vw 30vw;
-    margin-top: 14vw;
   }
-  /* line 699, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 732, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .services .grooming_services h2 {
     grid-area: 1 / 1 / 1 / span 2;
+    text-align: center;
   }
-  /* line 703, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 738, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .services .grooming_services ul {
     padding-left: 2em;
     grid-area: 2 / 1 / 2 / 1;
@@ -644,13 +693,13 @@
     column-count: 2;
     column-gap: 50vw;
   }
-  /* line 713, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 748, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .services .grooming_services ul li {
     margin-bottom: 6pt;
     font-size: 13pt;
     white-space: nowrap;
   }
-  /* line 718, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 753, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .services .grooming_services ul li:before {
     content: "\f14a";
     font-family: "Font Awesome 5 Free", serif;
@@ -660,23 +709,23 @@
     margin-right: 1em;
     color: #C1DDFE;
   }
-  /* line 730, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 765, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .services .grooming_services .special {
     grid-area: 3 / 1 / 3 / span 2;
   }
-  /* line 733, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 768, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .services .grooming_services .special ul {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1;
     padding-left: 2em;
   }
-  /* line 739, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 774, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .services .grooming_services .special ul li {
     white-space: normal;
     margin-bottom: 0.5em;
   }
-  /* line 743, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 778, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .services .grooming_services .special ul li:before {
     content: "\f1b0";
     font-family: "Font Awesome 5 Free", serif;
@@ -686,164 +735,199 @@
     margin-bottom: 1em;
     color: #E6F2FF;
   }
-  /* line 758, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 793, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .services .blob {
     grid-area: 2 / 1 / 4 / span 8;
     background: url("../images/blob_02_mobile.svg") no-repeat;
     width: 100vw;
     z-index: -20;
   }
-  /* line 764, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 799, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .services .blob img {
     display: none;
   }
-  /* line 769, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 804, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .services .blob_back {
     grid-area: 1 / 2 / 4 / span 8;
   }
-  /* line 772, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 807, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .services .blob_back img {
     display: none;
   }
   /* ----------------------------------------- */
   /* ------------------ ABOUT ---------------- */
   /* ----------------------------------------- */
-  /* line 785, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 817, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .about {
+    margin-top: -15vw;
+  }
+  /* line 820, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .about .about_us {
     grid-area: 2 / 2 / 2 / span 4;
     display: grid;
     grid-template-columns: 48% 4% 48%;
     grid-template-rows: 12vw 85vw 38vw 5vw 39vw 10vw;
     margin-top: 21vw;
+    text-align: center;
   }
-  /* line 792, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 829, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .about .about_us h2 {
-    grid-area: 1 / 1 / 1 / span 2;
+    grid-area: 1 / 1 / 1 / span 4;
   }
-  /* line 796, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 833, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .about .about_us p {
-    grid-area: 2 / 1 / 2 / span 3;
+    grid-area: 2 / 1 / 2 / span 4;
   }
-  /* line 800, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 837, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .about .about_us div {
     max-width: 100%;
     overflow: hidden;
     border-radius: 5px;
     /* tall image*/
   }
-  /* line 805, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 842, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .about .about_us div img {
     max-width: 100%;
     height: 100%;
     box-shadow: 0px 0px 12px rgba(3, 47, 97, 0.3);
   }
-  /* line 813, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 850, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .about .about_us div:nth-of-type(2) {
     grid-area: 3 / 3 / 3 / 3;
   }
-  /* line 816, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 853, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .about .about_us div:nth-of-type(2) img {
     object-fit: cover;
   }
-  /* line 822, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 859, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .about .about_us div:nth-of-type(3) {
     grid-area: 5 / 3 / 5 / 3;
   }
-  /* line 825, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 862, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .about .about_us div:nth-of-type(3) img {
     object-fit: cover;
   }
-  /* line 832, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 869, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .about .about_us div:nth-of-type(4) {
     grid-area: 3 / 1 / span 3 / 1;
   }
-  /* line 835, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 872, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .about .about_us div:nth-of-type(4) img {
     object-fit: cover;
   }
-  /* line 842, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 879, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .about .blob {
     grid-area: 2 / 1 / 4 / span 8;
     background: url("../images/blob_03_mobile.svg") no-repeat;
     width: 100vw;
     z-index: -20;
   }
-  /* line 848, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 885, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .about .blob img {
     display: none;
   }
   /* ----------------------------------------- */
   /* -------------- TESTIMONIALS ------------- */
   /* ----------------------------------------- */
-  /* line 859, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 896, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials {
+    margin-top: -15vw;
     background: url("../images/blob_04_mobile.svg") no-repeat;
     background-size: cover;
     /* Testimonial slider*/
     /* external css: flickity.css */
+    /* Link to google*/
     /* Pets galery*/
   }
-  /* line 864, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 902, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials h2 {
     grid-area: 1 / 2 / 1 / span 4;
     margin-top: 4em;
   }
-  /* line 871, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 909, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .flickity-page-dots {
     display: none;
   }
-  /* line 875, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 913, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .flickity-viewport {
-    height: 270px !important;
+    height: 320px !important;
   }
-  /* line 883, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 920, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .gallery {
-    grid-area: 2 / 2 / 2 / span 4;
+    grid-area: 2 / 1 / 2 / span 6;
   }
-  /* line 887, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 924, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .gallery .flickity-prev-next-button {
     top: 36vw;
   }
-  /* line 891, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 928, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .gallery .flickity-prev-next-button.next {
-    left: 82.5vw;
+    left: 85.5vw;
   }
-  /* line 895, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 932, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .gallery .flickity-prev-next-button.previous {
-    left: -3vw;
+    left: 4vw;
   }
-  /* line 900, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 937, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .gallery-cell {
-    width: 68vw;
-    height: 220px;
+    width: 75vw;
+    height: 270px;
     padding: 1em 1em 0 1em;
     background-color: #3478C5;
     border-radius: 10px;
     margin-top: 1.2em;
     text-align: center;
     position: relative;
-    margin-right: 10pt;
-    filter: drop-shadow(-4px -4px 6px rgba(77, 168, 218, 0.24)) drop-shadow(4px 4px 9px rgba(2, 45, 95, 0.15));
+    margin-right: 20pt;
+    filter: drop-shadow(-4px -4px 6px rgba(77, 168, 218, 0.3)) drop-shadow(4px 4px 9px rgba(2, 45, 95, 0.3));
   }
-  /* line 912, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 949, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .gallery-cell .review {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  /* line 917, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
-  .testimonials .gallery-cell .review p {
-    font-size: 0.65em;
-    line-height: 1.4em;
+  /* line 954, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .testimonials .gallery-cell .review h4 {
+    margin-bottom: 10pt;
   }
-  /* line 922, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 958, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .testimonials .gallery-cell .review p {
+    font-size: 12pt;
+    line-height: 15pt;
+  }
+  /* line 962, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .testimonials .gallery-cell .review p:before {
+    background: url("../images/quote-left.svg") no-repeat;
+    background-size: 50px 50px;
+    height: 50px;
+    width: 50px;
+    content: ' ';
+    position: fixed;
+    top: 45px;
+    left: 15px;
+    z-index: -10;
+  }
+  /* line 974, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .testimonials .gallery-cell .review p:after {
+    background: url("../images/quote-right.svg") no-repeat;
+    background-size: 50px 50px;
+    height: 50px;
+    width: 50px;
+    content: ' ';
+    position: fixed;
+    margin-top: -1em;
+    right: 15px;
+    z-index: -10;
+  }
+  /* line 988, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .gallery-cell .review i {
     display: inline-block;
     font-size: 14pt;
     line-height: 18pt;
     color: #3478C5;
   }
-  /* line 929, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 995, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .gallery-cell i.fa-star {
     color: #efba42;
     padding-right: 3pt;
@@ -851,7 +935,7 @@
     flex-direction: row;
     font-size: 12pt;
   }
-  /* line 937, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1003, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .gallery-cell .stars {
     display: flex;
     justify-content: center;
@@ -861,22 +945,29 @@
     position: absolute;
     bottom: 15px;
   }
-  /* line 946, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1012, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .gallery-cell .stars p {
     font-family: NotoSansMed, sans-serif;
     font-size: 12pt;
   }
-  /* line 955, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1021, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .testimonials div.button.secondary {
+    grid-area: 3 / 3 / 3/ span 3;
+  }
+  /* line 1030, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .testimonials_pets {
-    grid-area: 3 / 1 / 3 / span 6;
-    background-color: #E6F2FF;
+    grid-area: 4 / 1 / 4 / span 6;
     display: grid;
     grid-template-columns: 20px 1fr 20px;
-    grid-template-rows: 10vw 1fr 10vw;
+    grid-template-rows: 13vw 1fr 10vw;
     grid-gap: 0;
     margin-top: 1em;
   }
-  /* line 965, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1038, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .testimonials .testimonials_pets h3 {
+    grid-area: 1 / 2 / 1 / 2;
+  }
+  /* line 1043, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery {
     grid-area: 2 / 2 / 2 / 2;
     display: grid;
@@ -884,78 +975,78 @@
     border-radius: 5px;
     grid-template-areas: "img1 img3" "img2 img2" "img4 img6" "img4 img8" "img5 img5" "img9 img7";
   }
-  /* line 978, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1056, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery div {
     max-width: 100%;
     height: 100%;
   }
-  /* line 982, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1060, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery div img {
     border-radius: 5px;
     overflow: hidden;
     max-width: 100%;
+    box-shadow: 0px 0px 12px rgba(3, 47, 97, 0.3);
   }
-  /* line 988, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1068, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery div:nth-of-type(1), .testimonials .pet_gallery div:nth-of-type(3), .testimonials .pet_gallery div:nth-of-type(5), .testimonials .pet_gallery div:nth-of-type(8) {
     align-self: flex-start;
   }
-  /* line 995, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1075, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery div:nth-of-type(2), .testimonials .pet_gallery div:nth-of-type(4), .testimonials .pet_gallery div:nth-of-type(7), .testimonials .pet_gallery div:nth-of-type(9) {
     align-self: flex-end;
   }
-  /* line 1002, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1082, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery div:nth-of-type(1) {
     grid-area: img1;
   }
-  /* line 1006, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1086, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery div:nth-of-type(2) {
     grid-area: img2;
   }
-  /* line 1010, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1090, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery div:nth-of-type(3) {
     grid-area: img3;
   }
-  /* line 1014, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1094, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery div:nth-of-type(4) {
     grid-area: img4;
   }
-  /* line 1018, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1098, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery div:nth-of-type(5) {
     grid-area: img5;
   }
-  /* line 1022, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1102, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery div:nth-of-type(6) {
     grid-area: img6;
   }
-  /* line 1026, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1106, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery div:nth-of-type(7) {
     grid-area: img7;
   }
-  /* line 1030, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1110, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery div:nth-of-type(8) {
     grid-area: img8;
   }
-  /* line 1034, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1114, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .testimonials .pet_gallery div:nth-of-type(9) {
     grid-area: img9;
   }
   /* ----------------------------------------- */
   /* ---------------- CONTACT ---------------- */
   /* ----------------------------------------- */
-  /* line 1048, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1128, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .contact {
-    grid-column-gap: 20px;
-    grid-row-gap: 0;
-    background-color: #3478C5;
     padding-bottom: 15vw;
     padding-top: 2em;
-    display: grid;
+    background: url("../images/blob_05_mobile.svg") no-repeat;
+    background-size: cover;
   }
-  /* line 1057, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1134, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .contact .email_form {
-    grid-area: 2 / 2 / 2 / 2;
+    margin-top: 2em;
+    grid-area: 2 / 2 / 2 / span 4;
   }
-  /* line 1061, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1139, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   .contact div.button {
     width: 100%;
     text-align: center;
@@ -964,7 +1055,7 @@
   /* ----------------------------------------- */
   /* ------------- EMAIL FORM ---------------- */
   /* ----------------------------------------- */
-  /* line 1077, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1154, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm input,
   #fs-frm select,
   #fs-frm textarea,
@@ -982,11 +1073,11 @@
     -webkit-appearance: none;
     -moz-appearance: none;
   }
-  /* line 1095, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1172, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm ::placeholder {
     font-size: 14pt;
     line-height: 18pt;
-    font-family: "OpenSansLight", sans-serif;
+    font-family: "OpenSansRegular", sans-serif;
     display: block;
     color: #FFF;
     font-weight: 100;
@@ -995,7 +1086,7 @@
     color: #C1DDFE;
   }
   /* border, padding, margin, width */
-  /* line 1102, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1179, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm select,
   #fs-frm textarea,
   #fs-frm #card-element,
@@ -1006,16 +1097,16 @@
     padding: .75em 1.25rem;
     margin-bottom: 1.5rem;
   }
-  /* line 1114, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1191, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm input {
     transition: box-shadow 300ms ease-out;
   }
-  /* line 1118, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1195, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm input:focus,
   #fs-frm textarea:focus {
     box-shadow: 0px 0px 5px 0px #E6F2FF;
   }
-  /* line 1123, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1200, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm input.button_01 {
     display: inline-block;
     padding: 0.35em 1.2em;
@@ -1031,17 +1122,17 @@
     border-radius: 5px;
     width: 100%;
   }
-  /* line 1139, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1216, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm input.button_01:hover {
     color: #3478C5;
     background-color: #E6F2FF;
   }
-  /* line 1144, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1221, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm [type="text"],
   #fs-frm [type="email"] {
-    width: 62vw;
+    width: 100%;
   }
-  /* line 1149, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1226, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm [type="button"],
   #fs-frm [type="submit"],
   #fs-frm [type="reset"] {
@@ -1051,16 +1142,16 @@
     -moz-appearance: button;
     appearance: button;
   }
-  /* line 1163, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1240, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm [type="submit"],
   #fs-frm [type="reset"] {
     margin-bottom: 0;
   }
-  /* line 1168, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1245, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm select {
     text-transform: none;
   }
-  /* line 1172, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1249, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm [type="checkbox"] {
     -webkit-appearance: checkbox;
     -moz-appearance: checkbox;
@@ -1069,48 +1160,48 @@
     width: auto;
     margin: 0 .5em 0 0 !important;
   }
-  /* line 1181, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1258, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm [type="radio"] {
     -webkit-appearance: radio;
     -moz-appearance: radio;
     appearance: radio;
   }
   /* address, locale */
-  /* line 1188, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1265, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm fieldset.locale input[name="city"],
   #fs-frm fieldset.locale select[name="state"],
   #fs-frm fieldset.locale input[name="postal-code"] {
     display: inline;
   }
-  /* line 1194, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1271, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm fieldset.locale input[name="city"] {
     width: 52%;
   }
-  /* line 1198, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1275, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm fieldset.locale select[name="state"],
   #fs-frm fieldset.locale input[name="postal-code"] {
     width: 20%;
   }
-  /* line 1203, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1280, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm fieldset.locale input[name="city"],
   #fs-frm fieldset.locale select[name="state"] {
     margin-right: 3%;
   }
-  /* line 1211, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1288, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   #fs-frm input,
   #fs-frm textarea {
-    font-family: "OpenSansLight", sans-serif;
+    font-family: "OpenSansRegular", sans-serif;
     font-size: 12pt;
     color: #E6F2FF;
   }
-  /* line 1219, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1296, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   div.form_cell {
     position: relative;
     margin-top: 1.5em;
   }
-  /* line 1223, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1300, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   div.form_cell label {
-    font-family: "OpenSansLight", sans-serif;
+    font-family: "OpenSansRegular", sans-serif;
     font-size: 14pt;
     color: #E6F2FF;
     position: absolute;
@@ -1123,7 +1214,7 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  /* line 1239, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  /* line 1316, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
   div.form_cell label:before {
     content: "";
     position: absolute;
@@ -1133,6 +1224,24 @@
     height: 12px;
     width: 100%;
     z-index: -1;
+  }
+  /* ----------------------------------------- */
+  /* ---------------- Footer ----------------- */
+  /* ----------------------------------------- */
+  /* line 1335, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .footer {
+    background-color: #3478C5;
+    margin-top: -10pt;
+  }
+  /* line 1339, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .footer p {
+    font-size: 10pt;
+    text-align: center;
+    grid-area: 2 / 2 / 2 / span 4;
+  }
+  /* line 1344, ../../../../../Users/ulyncs1/Desktop/BARNDOG_GROOMING/sass/mobile_styles.scss */
+  .footer p a {
+    color: #E6F2FF;
   }
 }
 
