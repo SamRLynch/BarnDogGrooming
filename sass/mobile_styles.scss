@@ -537,7 +537,7 @@
                 content: "VISIT US";
                 @include head_font_mixin;
                 @include h3_size;
-                color: $nav_color;
+                color: $accent_color;
                 background-color: $background_color;
                 text-align: center;
                 margin-top: -25pt;
@@ -568,7 +568,7 @@
                 content: "HOURS";
                 @include head_font_mixin;
                 @include h3_size;
-                color: $nav_color;
+                color: $accent_color;
                 background-color: $background_color;
                 text-align: center;
                 margin-top: -25pt;
@@ -807,7 +807,7 @@
         h2 {
             grid-area: 1 / 2 / 1 / span 4;
             margin-top: 3em;
-              text-align: center;
+            text-align: center;
         }
 
 
