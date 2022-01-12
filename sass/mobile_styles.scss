@@ -3,55 +3,13 @@
         scroll-behavior: smooth;
     }
 
+    @import 'mixins';
+    @import 'variables';
+    @import 'fonts';
+
     /* --------------------------------------------------------------------- */
     /* ----------------------------- MOBILE -------------------------------- */
     /* --------------------------------------------------------------------- */
-    @font-face {
-        font-family: PoppinsSemibold;
-        src: url(../fonts/Poppins-SemiBold.ttf);
-    }
-
-    @font-face {
-        font-family: PoppinsMedium;
-        src: url(../fonts/Poppins-Medium.ttf);
-    }
-
-    @font-face {
-        font-family: PoppinsRegular;
-        src: url(../fonts/Poppins-Regular.ttf);
-    }
-
-
-    @font-face {
-        font-family: OpenSansLight;
-        src: url(../fonts/OpenSans-Light.ttf);
-    }
-
-    @font-face {
-        font-family: OpenSansMedium;
-        src: url(../fonts/OpenSans-Medium.ttf);
-    }
-
-    @font-face {
-        font-family: OpenSansRegular;
-        src: url(../fonts/OpenSans-Regular.ttf);
-    }
-
-    @font-face {
-        font-family: OpenSansSemiBold;
-        src: url(../fonts/OpenSans-SemiBold.ttf);
-    }
-
-    $background_color: #E6F2FF;
-    $text_color: #E6F2FF;
-    $accent_color: #3478C5;
-    /* 4484CE  */
-    $nav_color: #032F61;
-    $star_yellow: #efba42;
-    $button_blue: #599BE8;
-    $light_blue: #C1DDFE;
-    $cell_blue: #3477C6;
-    $white: #FFF;
 
     /* ----------------------------------------- */
     /* ------------ START CSS RESET  ----------- */
@@ -191,59 +149,8 @@
     /* ------------- END CSS RESET  ------------ */
     /* ----------------------------------------- */
 
-    /* ----------------------------------------- */
-    /* ----------------- MIXINS  --------------- */
-    /* ----------------------------------------- */
-    $header_font: 'PoppinsSemibold',
-    sans-serif;
 
-    $body_font: 'OpenSansRegular',
-    sans-serif;
 
-    @mixin body_font_mixin {
-        @include p_size;
-        font-family: $body_font;
-        display: block;
-        color: $white;
-        font-weight: 100;
-        margin-bottom: 10pt;
-    }
-
-    @mixin head_font_mixin {
-        font-family: $header_font;
-        @include header_size;
-        display: block;
-        color: $text_color;
-        font-weight: bold;
-        margin-bottom: 0.5em;
-        text-align: center;
-    }
-
-    @mixin header_size {
-        font-size: 38pt;
-
-    }
-
-    @mixin h1_size {
-        font-size: 24pt;
-    }
-
-    @mixin p_size {
-        font-size: 14pt;
-        line-height: 18pt;
-    }
-
-    @mixin h2_size {
-        font-size: 24pt;
-    }
-
-    @mixin h3_size {
-        font-size: 20pt;
-    }
-
-    @mixin h4_size {
-        font-size: 18pt;
-    }
 
     /* ----------------------------------------- */
     /* -------------- TEXT STYLES  ------------- */
@@ -261,6 +168,8 @@
         @include head_font_mixin;
         @include h3_size;
         font-family: 'PoppinsRegular', sans-serif;
+        text-align: center;
+
     }
 
     .leadin {
@@ -280,7 +189,6 @@
 
     p strong {
         font-family: 'OpenSansSemiBold', sans-serif;
-        color: $button_blue;
     }
 
     li {
@@ -332,7 +240,6 @@
     /* ---------------- Navigation  ------------ */
     /* ----------------------------------------- */
     .top_nav_container {
-        grid-area: header;
         position: sticky;
         top: 0;
         z-index: 50;
@@ -446,7 +353,6 @@
                         h4 {
                             text-align: left;
                             margin-top: 10pt;
-                            color: $nav_color;
                         }
                     }
                 }
@@ -587,13 +493,15 @@
             h1 {
                 margin-bottom: 10pt;
             }
+            .tagline {
+                margin: 1.5em 7% 0 7%;
+            }
         }
 
         div.button.primary {
             grid-area: 4 / 1 / 4 / span 2;
             align-self: end;
             margin-bottom: 2em;
-
             a.button_01 {
 
                 i {
@@ -722,15 +630,14 @@
     /* ---------------- SERVICES  -------------- */
     /* ----------------------------------------- */
     .services {
-
         .grooming_services {
-            margin-top: 14vw;
+            margin-top: 11vw;
             grid-area: 2 / 2 / 2 / span 4;
             display: grid;
             grid-template-columns: 50% 50%;
-            grid-template-rows: 20vw 40vw 30vw 54vw 26vw 30vw;
+            grid-template-rows: 54vw 36vw 30vw 54vw 26vw 30vw;
 
-            h2 {
+            .services_header {
                 grid-area: 1 / 1 / 1 / span 2;
                 text-align: center;
 
@@ -792,7 +699,7 @@
 
 
         .blob {
-            grid-area: 2 / 1 / 4 / span 8;
+            grid-area: 2 / 1 / 4 / span 6;
             background: url('../images/blob_02_mobile.svg') no-repeat;
             width: 100vw;
             z-index: -20;
@@ -803,7 +710,7 @@
         }
 
         .blob_back {
-            grid-area: 1 / 2 / 4 / span 8;
+            grid-area: 1 / 2 / 4 / 6;
 
             img {
                 display: none;
@@ -812,7 +719,7 @@
 
     }
 
-    /* ----------------------------------------- */
+  /* ----------------------------------------- */
     /* ------------------ ABOUT ---------------- */
     /* ----------------------------------------- */
     .about {
@@ -822,7 +729,7 @@
             grid-area: 2 / 2 / 2 / span 4;
             display: grid;
             grid-template-columns: 48% 4% 48%;
-            grid-template-rows: 12vw 85vw 38vw 5vw 39vw 10vw;
+            grid-template-rows: 18vw 85vw 38vw 5vw 39vw 10vw;
             margin-top: 21vw;
             text-align: center;
             ;
@@ -889,7 +796,6 @@
 
     }
 
-
     /* ----------------------------------------- */
     /* -------------- TESTIMONIALS ------------- */
     /* ----------------------------------------- */
@@ -900,7 +806,8 @@
 
         h2 {
             grid-area: 1 / 2 / 1 / span 4;
-            margin-top: 4em;
+            margin-top: 3em;
+              text-align: center;
         }
 
 
@@ -958,7 +865,7 @@
                     font-size: 12pt;
                     line-height: 15pt;
 
-                    &:before {
+                    /*&:before {
                         background: url('../images/quote-left.svg') no-repeat;
                         background-size: 50px 50px;
                         height: 50px;
@@ -980,7 +887,7 @@
                         margin-top: -1em;
                         right: 15px;
                         z-index: -10;
-                    }
+                    }*/
 
                 }
 
@@ -1139,17 +1046,25 @@
         background: url('../images/blob_05_mobile.svg') no-repeat;
         background-size: cover;
 
+        .contact_head {
+            grid-area: 1 / 2 / 1 / span 4;
+            margin-top: 3em;
+            text-align: center;
+        }
+
         .email_form {
-            margin-top: 2em;
             grid-area: 2 / 2 / 2 / span 4;
         }
+
         div.contact_address {
             display: none;
         }
+
         div.button.primary {
             grid-area: 3 / 2 / 3 / span 4;
             margin-top: 3em;
-            text-align: center;;
+            text-align: center;
+            ;
 
             a.button_01 {}
         }
