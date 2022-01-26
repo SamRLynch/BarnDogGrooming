@@ -364,18 +364,34 @@
 
         li.n_services {
             grid-column: 4 / 4;
+            margin-right: 1em;
         }
 
         li.n_about {
             grid-column: 5 / 5;
+            margin-right: 1em;
         }
 
         li.n_contact {
             grid-column: 7 / 7;
+            margin-right: 1em;
         }
 
         li.n_testimonials {
             grid-column: 6 / 6;
+            margin-right: 1em;
+        }
+
+        @media only screen and (max-width: 740px) {
+
+            li.n_services,
+            li.n_about,
+            li.n_contact,
+            li.n_testimonials {
+                margin-right: 0em;
+            }
+
+
         }
 
         li.n_icons {
@@ -410,10 +426,12 @@
             border-radius: 5px;
             color: $nav_color;
 
-            i, img {
-                     color: $nav_color;
+            i,
+            img {
+                color: $nav_color;
             }
         }
+
         a,
         i {
             font-size: 14px;
@@ -438,7 +456,7 @@
         li.n_logo a:hover {
             background-color: transparent;
         }
-        
+
 
     }
 
