@@ -544,7 +544,7 @@
             }
 
             p:nth-of-type(4):after {
-                content: "603.205.4757";
+                content: "603.813.2013";
                 font-size: 16pt;
                 color: $accent_color;
                 font-family: PoppinsMedium, sans-serif;
@@ -553,6 +553,10 @@
                 margin-left: -15pt;
                 display: block;
                 margin-right: -15pt;
+            }
+
+            h4 {
+                display: none;
             }
         }
 
