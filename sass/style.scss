@@ -701,9 +701,11 @@
                     border-radius: 10px;
                     padding: 1em;
                     width: 45%;
-            @media only screen and (max-width: 1000px) {
-                width: 80%;
-            } 
+
+                    @media only screen and (max-width: 1000px) {
+                        width: 80%;
+                    }
+
                     margin-top: 1.5rem;
                     margin-right: 1.5rem;
                     border: 2px solid $accent_color;
@@ -715,24 +717,29 @@
                         color: $nav_color;
 
                         b {
-                            font-family: 'OpenSansSemiBold';
+                            font-family: "PoppinsSemibold", sans-serif;
+                            font-weight: bold;
                             margin-right: 5pt;
                         }
                     }
+
                     ul {
                         margin-bottom: 1rem;
-                           li {
+
+                        li {
                             display: flex;
                             justify-content: space-between;
 
                             span.price {
                                 color: $accent_color;
-                                font-family: 'OpenSansSemiBold';
+                                font-family: "PoppinsSemibold", sans-serif;
+                                font-weight: bold;
+
                                 margin-left: auto;
                             }
-                        } 
+                        }
                     }
-                    
+
 
                 }
             }

@@ -730,7 +730,8 @@
                             color: $nav_color;
 
                             b {
-                                font-family: 'OpenSansSemiBold';
+                                font-family: "PoppinsSemibold", sans-serif;
+                                font-weight: bold;
                                 margin-right: 5pt;
                             }
                         }
@@ -746,7 +747,8 @@
 
                                 span.price {
                                     color: $accent_color;
-                                    font-family: 'OpenSansSemiBold';
+                                    font-family: "PoppinsSemibold", sans-serif;
+                                    font-weight: bold;
                                     margin-left: auto;
                                     padding-left: 5pt;
                                 }
